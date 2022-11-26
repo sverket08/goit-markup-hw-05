@@ -85,6 +85,7 @@ img{
     margin-right: 0;
 }
 .header-menu{
+    position: relative;
     padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
@@ -98,17 +99,16 @@ img{
 /* підкреслення */
 .current{
     color:var(--accent-color);
-    height: 4px;
-    border-bottom: 4px solid #2196F3;
-    position: relative;
 }
 .current::after{
     content: "";
     position: absolute;
     width: 100%;
     border-radius: 2px;
-    bottom: -33px;
+    bottom: 0;
     left: 0;
+    height: 4px;
+    background-color: var(--accent-color);
 }
 .header-menu:hover, .header-menu:focus{
     color: var(--accent-color);   
