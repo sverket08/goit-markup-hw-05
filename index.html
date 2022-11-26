@@ -69,7 +69,7 @@
       <section class="main-blok">
         <div class="container">
           <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="main-button" type="button">Замовити послугу</button>
+          <button class="main-button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!--section2 УВАГА ДО ДЕТАЛЕЙ-->
@@ -143,13 +143,33 @@
           <h2 class="work-title title">Чим ми займаємося</h2>
           <ul class="work-list list">
             <li class="foto-list">
+              <div class="work-text">
               <img src="img/img1.jpg" alt="картинка" width="370" class="foto" />
+              
+              <h3 class="work-desc">ДЕКСТОПНІ ДОДАТКИ</h3>
+              </di>
             </li>
             <li class="foto-list">
-              <img src="img/img2.jpg" alt="картинка" width="370" class="foto" />
+              <div class="work-text">
+                <img
+                  src="img/img2.jpg"
+                  alt="картинка"
+                  width="370"
+                  class="foto"
+                />
+                <h3 class="work-desc">МОБІЛЬНІ ДОДАТКИ</h3>
+              </div>
             </li>
             <li class="foto-list">
-              <img src="img/img3.jpg" alt="картинка" width="370" class="foto" />
+              <div class="work-text">
+                <img
+                  src="img/img3.jpg"
+                  alt="картинка"
+                  width="370"
+                  class="foto"
+                />
+                <h3 class="work-desc">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -449,5 +469,18 @@
         </div>
       </div>
     </footer>
+    <div class="modal-backdrop is-hidden" data-modal>
+    <div class="modal">
+      <div class="close-sings" data-modal-close>
+        <button class="button-close">
+          <svg class="modal-close" width="11" height="11">
+            <use href="./img/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+       
+            </div>
+    </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
